@@ -53,6 +53,8 @@ struct ContentView : View {
                                 .border(.red, width: vm.selectedcopitafood == name ? 1.0: 0.0)
                                 .onTapGesture{
                                     vm.selectedcopitafood = name
+                                    self.openMenu()
+                                    
                                 }
                             
                         }
@@ -85,9 +87,15 @@ struct ContentView : View {
                                 .frame(width: 50, height: 50)
                         })
                     }
-                    
-                    
                     Spacer()
+                    
+                    Button(action: {
+                        print("Add to cart")
+                    }, label: {
+                        Image(systemName: "cart.fill.badge.plus")
+                            .resizable()
+                            .frame(width: 50, height: 50)
+                    })
                 }
                 
                 
@@ -105,6 +113,7 @@ struct ContentView : View {
 struct ARViewContainer: UIViewRepresentable {
     let vm: FoodViewModel
     @Binding var showed: Bool
+    
   
     
     func makeUIView(context: Context) -> ARView {
@@ -122,7 +131,7 @@ struct ARViewContainer: UIViewRepresentable {
         
         // Load the "Box" scene from the "Experience" Reality File
         
-      
+        
         
         
         
