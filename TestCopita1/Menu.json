@@ -1,0 +1,220 @@
+[
+
+    {
+        "id": 1,
+        "modelName": "Chips&TwoSalsas",
+        "displayName": "Chips & Salsas",
+        "displayPrice": "$5.50",
+        "displayDesc": "Charred roma tomato | tomatillo mint",
+        "dishType": "SMALL PLATES"
+
+    },
+    {
+        "id": 2,
+        "modelName": "Guacamole",
+        "displayName": "Guacamole",
+        "displayPrice": "$12",
+        "displayDesc": "Avocado | chile serrano | cilantro | onion",
+        "dishType": "SMALL PLATES"
+    },
+    {
+        "id": 3,
+        "modelName": "PapasBravas",
+        "displayName": "Papas Bravas",
+        "displayPrice": "$9",
+        "displayDesc": "Roasted & fried Kennebec potatoes | jalapeños | avocado crema",
+        "dishType": "SMALL PLATES"
+    },
+    {
+        "id": 4,
+        "modelName": "HabaneroWings",
+        "displayName": "Habanero Wings",
+        "displayPrice": "$14",
+        "displayDesc": "Guajillo rubbed wings | habanero butter | avocado crema | chili powder",
+        "dishType": "SMALL PLATES"
+    },
+    {
+        "id": 5,
+        "modelName": "TortillaSoupCup",
+        "displayName": "Tortilla Soup",
+        "displayPrice": "Cup $8 / Bowl $13",
+        "displayDesc": "Wood-roasted chicken | spring vegetables | avocado | queso Cotija | tortilla ribbons",
+        "dishType": "SMALL PLATES"
+    },
+    {
+        "id": 6,
+        "modelName": "EnsaladaMixta",
+        "displayName": "Chopped Salad",
+        "displayPrice": "$14",
+        "displayDesc": "Butter lettuce | radicchio | sugar snap peas | avocado | cherry tomato | roasted poblano | chickpeas | tortilla strips | queso cotija | micro cilantro | chipotle dressing",
+        "dishType": "SMALL PLATES"
+    },
+    {
+        "id": 7,
+        "modelName": "EnsaladaMixta",
+        "displayName": "Spring Salad",
+        "displayPrice": "$14",
+        "displayDesc": "Baby lacinato kale | frisée | English cucumber | purple daikon radish | kumquats | fried fennel | toasted pistachios | lemon vinaigrette",
+        "dishType": "SMALL PLATES"
+    },
+    {
+        "id": 8,
+        "modelName": "QuesoFundido",
+        "displayName": "Queso Fundido",
+        "displayPrice": "$14",
+        "displayDesc": "Queso Oaxaca | homemade red chorizo | rajas poblano | roasted pineapple",
+        "dishType": "SMALL PLATES"
+    },
+    {
+        "id": 9,
+        "modelName": "Bruselas",
+        "displayName": "Bruselas",
+        "displayPrice": "$14",
+        "displayDesc": "Roasted brussels sprouts | citrus-chipotle salsa | candied walnuts | lime | cilantro",
+        "dishType": "SMALL PLATES"
+    },
+    {
+        "id": 10,
+        "modelName": "MexicanTruffleEmpanadas",
+        "displayName": "Mexican Truffle Empanadas",
+        "displayPrice": "$15",
+        "displayDesc": "Huitlacoche | jalapeños | snap peas | epazote | queso Oaxaca | Mexican slaw | roasted pepper cream | queso Cotija",
+        "dishType": "SMALL PLATES"
+    },
+    {
+        "id": 11,
+        "modelName": "",
+        "displayName": "Al Pastor",
+        "displayPrice": "Two Tacos $13 / Four Tacos $22",
+        "displayDesc": "Achiote marinated and spit roasted pork | caramelized pineapple salsa | onion | cilantro",
+        "dishType": "TACOS"
+    },
+    {
+        "id": 12,
+        "modelName": "",
+        "displayName": "Carne Asada",
+        "displayPrice": "Two $15 / Four $24",
+        "displayDesc": "Marinated flank steak | charred tomatillo salsa | caramelized red onions | cilantro",
+        "dishType": "TACOS"
+    },
+    {
+        "id": 13,
+        "modelName": "",
+        "displayName": "Vegetable",
+        "displayPrice": "Two $12 / Four $19",
+        "displayDesc": "Asparagus | sugar snap peas | black bean puree | tomatillo molcajete salsa | queso Cotija | micro cilantro",
+        "dishType": "TACOS"
+    },
+    {
+        "id": 14,
+        "modelName": "",
+        "displayName": "Chicken Tinga",
+        "displayPrice": "Two $13 / Four $22",
+        "displayDesc": "Braised chicken breast | tomato & onion | chipotle | avocado | crema | queso fresco",
+        "dishType": "TACOS"
+    },
+    {
+        "id": 15,
+        "modelName": "",
+        "displayName": "Fried Pork Belly",
+        "displayPrice": "Two $13 / Four $22",
+        "displayDesc": "Pork belly | pickled red onions | pipian mole | cilantro",
+        "dishType": "TACOS"
+    },
+    {
+        "id": 17,
+        "modelName": "",
+        "displayName": "Baja Style Cod",
+        "displayPrice": "Two $14 / Four $23",
+        "displayDesc": "House battered cod | avocado, wasabi & parmesan aioli | cabbage slaw | micro shiso",
+        "dishType": "TACOS"
+    },
+    {
+        "id": 18,
+        "modelName": "",
+        "displayName": "Coctel Mixto",
+        "displayPrice": "$18",
+        "displayDesc": "Maine lobster | bay scallops | flounder | tomato | orange | serrano | cucumber | avocado",
+        "dishType": "CEVICHES"
+    },
+    {
+        "id": 19,
+        "modelName": "",
+        "displayName": "Coconut Campechano",
+        "displayPrice": "$16",
+        "displayDesc": "Bay scallops | gulf shrimp | flounder | lime | avocado | coconut & chile de árbol marinade | serrano | onion | cilantro",
+        "dishType": "CEVICHES"
+    },
+    {
+        "id": 20,
+        "modelName": "",
+        "displayName": "Passion Fruit",
+        "displayPrice": "$16",
+        "displayDesc": "White gulf shrimp | kumquats | Granny Smith apple | pickled red onion | red jalapeno |cilantro",
+        "dishType": "CEVICHES"
+    },
+    {
+        "id": 21,
+        "modelName": "",
+        "displayName": "Tuna",
+        "displayPrice": "$17",
+        "displayDesc": "Cured yellow fin | Minneola tangelos | pistachio salsa | black sesame seeds | avocado puree",
+        "dishType": "CEVICHES"
+    },
+    {
+        "id": 22,
+        "modelName": "",
+        "displayName": "Hurache",
+        "displayPrice": "$23",
+        "displayDesc": "Flap steak | black bean puree | queso Oaxaca | roasted poblano | cherry tomato | spring onion | queso fresco | cilantro",
+        "dishType": "BIG PLATES"
+    },
+    {
+        "id": 23,
+        "modelName": "",
+        "displayName": "Quesabirria",
+        "displayPrice": "$24",
+        "displayDesc": "Slow-cooked lamb & queso Oaxaca quesadillas | sesame seed & chile de arbol salsa | avocado | lamb jus",
+        "dishType": "BIG PLATES"
+    },
+    {
+        "id": 24,
+        "modelName": "",
+        "displayName": "Enchiladas de Pollo en Mole Manchamanteles",
+        "displayPrice": "$20",
+        "displayDesc": "Roasted chicken | mole sauce | apple | queso Oaxaca | almonds | crema",
+        "dishType": "BIG PLATES"
+    },
+    {
+        "id": 25,
+        "modelName": "",
+        "displayName": "Shrimp Enchiladas",
+        "displayPrice": "$19",
+        "displayDesc": "White gulf shrimp | three cheese blend | corn tortilla | fava poblano salsa | crema fresca | tomatillo | dikon radish",
+        "dishType": "BIG PLATES"
+    },
+    {
+        "id": 26,
+        "modelName": "",
+        "displayName": "24 Hour Carnitas",
+        "displayPrice": "$21",
+        "displayDesc": "Braised pork | pickled vegetables | tomatillo & habanero salsa | cilantro | onion | handmade tortillas",
+        "dishType": "BIG PLATES"
+    },
+    {
+        "id": 27,
+        "modelName": "",
+        "displayName": "Wood-Roasted Chicken",
+        "displayPrice": "Half $20 / Whole $34",
+        "displayDesc": "Roasted potatoes | peppers & onions | salsa rustica | smoked bacon pinto beans",
+        "dishType": "BIG PLATES"
+    },
+    {
+        "id": 28,
+        "modelName": "",
+        "displayName": "Tetela Oaxaca",
+        "displayPrice": "$19",
+        "displayDesc": "Corn empanada | black beans | epazote | rajas poblano | queso Oaxaca | mole amarillo | avocado | crema | queso Cotija | cilantro",
+        "dishType": "BIG PLATES"
+    }
+]

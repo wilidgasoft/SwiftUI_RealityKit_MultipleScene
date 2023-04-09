@@ -11,6 +11,13 @@
 		033B821029D96AC100232F31 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033B820F29D96AC100232F31 /* Coordinator.swift */; };
 		033B821229D96C3400232F31 /* ARView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033B821129D96C3400232F31 /* ARView+Extensions.swift */; };
 		033B821429D987CF00232F31 /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033B821329D987CF00232F31 /* MainMenu.swift */; };
+		034CA24E29E12FE80029B2FB /* Menu.json in Resources */ = {isa = PBXBuildFile; fileRef = 034CA24D29E12FE80029B2FB /* Menu.json */; };
+		034CA25029E145340029B2FB /* MenuObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034CA24F29E145340029B2FB /* MenuObject.swift */; };
+		034CA25229E147100029B2FB /* ReadData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034CA25129E147100029B2FB /* ReadData.swift */; };
+		034CA25429E1475C0029B2FB /* testViewMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034CA25329E1475C0029B2FB /* testViewMenu.swift */; };
+		034CA25A29E2286F0029B2FB /* CheckOutItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034CA25929E2286F0029B2FB /* CheckOutItem.swift */; };
+		034CA25C29E22BB20029B2FB /* CheckOutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034CA25B29E22BB20029B2FB /* CheckOutView.swift */; };
+		034CA25E29E234580029B2FB /* ModelCheckOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034CA25D29E234580029B2FB /* ModelCheckOut.swift */; };
 		0382977629D94C8F00192FA3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0382977529D94C8F00192FA3 /* AppDelegate.swift */; };
 		0382977829D94C8F00192FA3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0382977729D94C8F00192FA3 /* ContentView.swift */; };
 		0382977C29D94C9000192FA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0382977B29D94C9000192FA3 /* Assets.xcassets */; };
@@ -23,6 +30,13 @@
 		033B820F29D96AC100232F31 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		033B821129D96C3400232F31 /* ARView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ARView+Extensions.swift"; sourceTree = "<group>"; };
 		033B821329D987CF00232F31 /* MainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
+		034CA24D29E12FE80029B2FB /* Menu.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Menu.json; sourceTree = "<group>"; };
+		034CA24F29E145340029B2FB /* MenuObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuObject.swift; sourceTree = "<group>"; };
+		034CA25129E147100029B2FB /* ReadData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadData.swift; sourceTree = "<group>"; };
+		034CA25329E1475C0029B2FB /* testViewMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testViewMenu.swift; sourceTree = "<group>"; };
+		034CA25929E2286F0029B2FB /* CheckOutItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckOutItem.swift; sourceTree = "<group>"; };
+		034CA25B29E22BB20029B2FB /* CheckOutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckOutView.swift; sourceTree = "<group>"; };
+		034CA25D29E234580029B2FB /* ModelCheckOut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelCheckOut.swift; sourceTree = "<group>"; };
 		0382977229D94C8F00192FA3 /* TestCopita1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestCopita1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0382977529D94C8F00192FA3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0382977729D94C8F00192FA3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -70,6 +84,13 @@
 				033B820F29D96AC100232F31 /* Coordinator.swift */,
 				033B821129D96C3400232F31 /* ARView+Extensions.swift */,
 				033B821329D987CF00232F31 /* MainMenu.swift */,
+				034CA24D29E12FE80029B2FB /* Menu.json */,
+				034CA24F29E145340029B2FB /* MenuObject.swift */,
+				034CA25129E147100029B2FB /* ReadData.swift */,
+				034CA25329E1475C0029B2FB /* testViewMenu.swift */,
+				034CA25929E2286F0029B2FB /* CheckOutItem.swift */,
+				034CA25B29E22BB20029B2FB /* CheckOutView.swift */,
+				034CA25D29E234580029B2FB /* ModelCheckOut.swift */,
 			);
 			path = TestCopita1;
 			sourceTree = "<group>";
@@ -141,6 +162,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0382977F29D94C9000192FA3 /* Preview Assets.xcassets in Resources */,
+				034CA24E29E12FE80029B2FB /* Menu.json in Resources */,
 				0382977C29D94C9000192FA3 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -153,12 +175,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				0382977829D94C8F00192FA3 /* ContentView.swift in Sources */,
+				034CA25E29E234580029B2FB /* ModelCheckOut.swift in Sources */,
 				0382977629D94C8F00192FA3 /* AppDelegate.swift in Sources */,
 				033B821429D987CF00232F31 /* MainMenu.swift in Sources */,
+				034CA25429E1475C0029B2FB /* testViewMenu.swift in Sources */,
 				033B821029D96AC100232F31 /* Coordinator.swift in Sources */,
 				033B821229D96C3400232F31 /* ARView+Extensions.swift in Sources */,
 				033B820E29D9593400232F31 /* FoodViewModel.swift in Sources */,
+				034CA25229E147100029B2FB /* ReadData.swift in Sources */,
+				034CA25A29E2286F0029B2FB /* CheckOutItem.swift in Sources */,
 				0382978629D94F7F00192FA3 /* Experience.rcproject in Sources */,
+				034CA25C29E22BB20029B2FB /* CheckOutView.swift in Sources */,
+				034CA25029E145340029B2FB /* MenuObject.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

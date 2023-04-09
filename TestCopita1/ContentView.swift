@@ -13,12 +13,16 @@ struct ContentView : View {
     
     
     @StateObject private var vm = FoodViewModel()
-    @State private var show: Bool = false
+    @State private var show: Bool = true
     @State var menuOpen: Bool
     @State private var animationAmount = 1.0
+    @ObservedObject var datas = ReadData()
     let width: CGFloat
+    @ObservedObject var checkOutItem = CheckOutItem()
+//    @ObservedObject var checkOutItems = CheckOutItem()
     
-    let copitafood = ["Chips&TwoSalsas", "Guacamole","PapasBravas", "HabaneroWings","TortillaSoupCup", "TortillaSoupBowl","EnsaladaMixta", "GoldenBeetSalad", "QuesoFundido", "Bruselas", "MexicanTruffleEmpanadas" ]
+    
+//    let copitafood = ["Chips&TwoSalsas", "Guacamole","PapasBravas", "HabaneroWings","TortillaSoupCup", "TortillaSoupBowl","EnsaladaMixta", "GoldenBeetSalad", "QuesoFundido", "Bruselas", "MexicanTruffleEmpanadas" ]
     
     
     var body: some View {
@@ -26,7 +30,7 @@ struct ContentView : View {
             GeometryReader { _ in
                 EmptyView()
             }
-            .background(Color.gray.opacity(0.3))
+            .background(Color("ColorCopita"))
             .opacity(self.menuOpen ? 1.0 : 0.0)
             //            .animation(Animation.easeIn.delay(0.25))
             
@@ -45,26 +49,180 @@ struct ContentView : View {
                 
                 HStack {
                     
-                    List {
-                        ForEach(copitafood, id:\.self) {name in
-                            Image(name)
-                                .resizable()
-                                .frame(width:300, height: 150)
-                                .border(.red, width: vm.selectedcopitafood == name ? 1.0: 0.0)
-                                .onTapGesture{
-                                    vm.selectedcopitafood = name
-                                    self.openMenu()
+//                    List {
+//                        ForEach(copitafood, id:\.self) {name in
+//                            Image(name)
+//                                .resizable()
+//                                .frame(width:300, height: 150)
+//                                .border(.red, width: vm.selectedcopitafood == name ? 1.0: 0.0)
+//                                .onTapGesture{
+//                                    vm.selectedcopitafood = name
+//                                    self.openMenu()
+//                                    
+//                                }
+//                            
+//                        }
+//                    }
+                    List{
+                        
+                        
+                        Section(header: HStack{
+                            Text("SMALL PLATES").font(.largeTitle)
+                            .foregroundColor(.red)
+                            .border(.gray, width: 2)
+                        }.background(Color("copitaMenu"))
+                            .listRowInsets(EdgeInsets(
+                                top: 0,
+                                leading: 0,
+                                bottom: 0,
+                                trailing: 0))
+                        ){
+                            ForEach(datas.menuObject, id:\.self) {item in
+                                
+                                if item.dishType == "SMALL PLATES" {
                                     
+                                    VStack (alignment:.leading) {
+                                        Text("\(item.displayName) \(item.displayPrice)")
+                                            .font(.title3)
+                                            .foregroundColor(.black)
+                                            
+                                        
+                                        Text("\(item.displayDesc)")
+                                            .font(.bold(.caption)())
+                                            .foregroundColor(.black)
+                                    }
+                                    .frame(maxWidth: .infinity, maxHeight: 200, alignment: .topLeading)
+                                    .border(.red, width: vm.selectedcopitafood == item.modelName ? 3.0 : 0.0
+                                    )
+                                    .onTapGesture{
+                                        vm.selectedcopitafood = item.modelName
+                                        self.openMenu()
+                                        
+                                    }
                                 }
-                            
+                            }
+                            .listRowBackground(Color("copitaColor")) //color de dentro de la list
                         }
+                        .listStyle(GroupedListStyle())
+                       
+                        Section(header: HStack{
+                            Text("TACOS").font(.largeTitle)
+                            .foregroundColor(.red)
+                            .border(.gray, width: 2)
+                        }.background(Color("copitaMenu"))
+                            .listRowInsets(EdgeInsets(
+                                top: 0,
+                                leading: 0,
+                                bottom: 0,
+                                trailing: 0))
+                        ){
+                            ForEach(datas.menuObject, id:\.self) {item in
+                                
+                                if item.dishType == "TACOS" {
+                                    
+                                    VStack (alignment:.leading) {
+                                        Text("\(item.displayName) \(item.displayPrice)")
+                                            .font(.title3)
+                                            .foregroundColor(.black)
+                                        Text("\(item.displayDesc)")
+                                            .font(.bold(.caption)())
+                                            .foregroundColor(.black)
+                                    }
+                                    .frame(maxWidth: .infinity, maxHeight: 200, alignment: .topLeading)
+                                    .border(.red, width: vm.selectedcopitafood == item.modelName ? 3.0 : 0.0
+                                    )
+                                    .onTapGesture{
+                                        vm.selectedcopitafood = item.modelName
+                                        self.openMenu()
+                                        
+                                    }
+                                }
+                            }
+                            .listRowBackground(Color("copitaColor")) //color de dentro de la list
+                        }
+                        .listStyle(GroupedListStyle())
+                        Section(header: HStack{
+                            Text("CEVICHES").font(.largeTitle)
+                            .foregroundColor(.red)
+                            .border(.gray, width: 2)
+                        }.background(Color("copitaMenu"))
+                            .listRowInsets(EdgeInsets(
+                                top: 0,
+                                leading: 0,
+                                bottom: 0,
+                                trailing: 0))
+                        ){
+                            ForEach(datas.menuObject, id:\.self) {item in
+                                
+                                if item.dishType == "CEVICHES" {
+                                    
+                                    VStack (alignment:.leading) {
+                                        Text("\(item.displayName) \(item.displayPrice)")
+                                            .font(.title3)
+                                            .foregroundColor(.black)
+                                        
+                                        Text("\(item.displayDesc)")
+                                            .font(.bold(.caption)())
+                                            .foregroundColor(.black)
+                                    }
+                                    .frame(maxWidth: .infinity, maxHeight: 200, alignment: .topLeading)
+                                    .border(.red, width: vm.selectedcopitafood == item.modelName ? 3.0 : 0.0
+                                    )
+                                    .onTapGesture{
+                                        vm.selectedcopitafood = item.modelName
+                                        self.openMenu()
+                                        
+                                    }
+                                }
+                            }
+                            .listRowBackground(Color("copitaColor")) //color de dentro de la list
+                        }
+                        .listStyle(GroupedListStyle())
+                        Section(header: HStack{
+                            Text("BIG PLATES").font(.largeTitle)
+                            .foregroundColor(.red)
+                            .border(.gray, width: 2)
+                        }.background(Color("copitaMenu"))
+                            .listRowInsets(EdgeInsets(
+                                top: 0,
+                                leading: 0,
+                                bottom: 0,
+                                trailing: 0))
+                        ){
+                            ForEach(datas.menuObject, id:\.self) {item in
+                                
+                                if item.dishType == "BIG PLATES" {
+                                    
+                                    VStack (alignment:.leading) {
+                                        Text("\(item.displayName) \(item.displayPrice)")
+                                            .font(.title3)
+                                            .foregroundColor(.black)
+                                        
+                                        Text("\(item.displayDesc)")
+                                            .font(.bold(.caption)())
+                                            .foregroundColor(.black)
+                                    }
+                                    .frame(maxWidth: .infinity, maxHeight: 200, alignment: .topLeading)
+                                    .border(.red, width: vm.selectedcopitafood == item.modelName ? 3.0 : 0.0
+                                    )
+                                    .onTapGesture{
+                                        vm.selectedcopitafood = item.modelName
+                                        self.openMenu()
+                                        
+                                    }
+                                }
+                            }
+                            .listRowBackground(Color("copitaColor")) //color de dentro de la list
+                        }
+                        .listStyle(GroupedListStyle())
+                        
                     }
                     
                     .frame(width: self.width)
-                    .background(Color.white)
+                    .background(Color("copitaColor"))
                     .offset(x: self.menuOpen ? 0 : -self.width)
-                    .animation(.default)
-                    
+//                    .animation(.default)
+                    .scrollContentBackground(.hidden)
                     
                     Spacer()
                 }
@@ -73,29 +231,44 @@ struct ContentView : View {
                         Button(action: {
                             self.openMenu()
                         }, label: {
-                            //                            Text("MENU")
                             Image(systemName: "filemenu.and.selection")
                                 .resizable()
-                                .frame(width: 50, height: 50)
-                        })
-                    } else {
-                        Button(action: {
-                            self.openMenu()
-                        }, label: {
-                            Image(systemName: "xmark.circle.fill")
-                                .resizable()
-                                .frame(width: 50, height: 50)
+                                .frame(width: 35, height: 35)
+                                .foregroundColor(Color("copitaColor"))
                         })
                     }
+//                    else {
+//                        Button(action: {
+//                            self.openMenu()
+//                        }, label: {
+//                            Image(systemName: "xmark.circle.fill")
+//                                .resizable()
+//                                .frame(width: 50, height: 50)
+//                        })
+//                    }
+                    Button(action: {
+                        self.show.toggle()
+                        checkOutItem.deleteAll()
+                    }, label: {
+                        Image(systemName: "arrow.counterclockwise")
+                            .resizable()
+                            .frame(width: 35, height: 35)
+                            .foregroundColor(Color("copitaColor"))
+                            
+                    })
                     Spacer()
                     
-                    Button(action: {
-                        print("Add to cart")
-                    }, label: {
-                        Image(systemName: "cart.fill.badge.plus")
-                            .resizable()
-                            .frame(width: 50, height: 50)
-                    })
+                    
+//                    NavigationLink {
+//                        // destination view to navigation to
+//                        CheckOutView()
+//                        
+//                    } label: {
+//                        Image(systemName: "cart.circle.fill")
+//                            .resizable()
+//                            .frame(width: 35, height: 35)
+//                            .foregroundColor(Color("copitaColor"))
+//                    }
                 }
                 
                 
@@ -108,12 +281,15 @@ struct ContentView : View {
     func openMenu() {
         self.menuOpen.toggle()
     }
+   
 }
 
 struct ARViewContainer: UIViewRepresentable {
     let vm: FoodViewModel
     @Binding var showed: Bool
     
+   
+   
   
     
     func makeUIView(context: Context) -> ARView {
@@ -150,7 +326,8 @@ struct ARViewContainer: UIViewRepresentable {
     }
     
     func removingView(arView: ARView) {
-//        arView.scene.
+        arView.scene.anchors.removeAll()
+//        checkOutArr.menuObjectSelect.removeAll()
     }
     
     func makeCoordinator() -> Coordinator{
@@ -162,6 +339,7 @@ struct ARViewContainer: UIViewRepresentable {
     
     
 }
+
 
 #if DEBUG
 struct ContentView_Previews : PreviewProvider {
